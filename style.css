@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 横幅のパーセンテージの指定などが楽になる */
+    box-sizing: border-box;
+
+}
+
+.main {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #cc4792e1, #cd294c);
+    /*上の隙間の白余白を消すため*/
+    overflow: hidden;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+    font-weight: 500px;
+    position: sticky;
+    z-index: 1;
+
+    /*これでもできるよ！　navバーの配置*/
+    /*justify-content: space-between;*/
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.nav-links ul a {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links ul a:hover {
+    color: rgb(236, 175, 101);
+}
+
+.log-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+    margin-right: 12px;
+}
+
+.log-area h2 {
+    font-size: 1.7rem;
+}
+
+.infomation {
+    width: 1000px;
+    height: 1000px;
+    /*親　.main*/
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    /* background-color: #a3a1a1; */
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.feature {
+    display: flex;
+    position: absolute;
+    color: white;
+}
+
+.feature img {
+    width: 72px;
+}
+
+.feature div {
+    margin-left: 20px;
+}
+
+.feature div a {
+    margin-top: 8px;
+}
+
+.one {
+    display: flex;
+    top: 450px;
+    right: 70px;
+}
+
+.two {
+    top: 100px;
+    left: 340px;
+    transform: rotate(-90deg);
+}
+
+.three {
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+
+.four {
+    bottom: 150px;
+    right: 370px;
+    transform: rotate(-270deg);
+}
+
+.pc {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 27%;
+    z-index: 1;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15%;
+    text-align: center;
+}
+
+.control h3 {
+    color: #fff;
+    margin: 20px 0;
+}
+
+.control img {
+    width: 15%;
+}
+
+#upBtn {
+    cursor: pointer;
+}
+
+#downBtn {
+    cursor: pointer;
+    transform: rotate(-180deg);
+}
+
+.overray {
+    width: 0;
+    height: 0;
+    border-top: 520px solid #fff;
+    border-right: 520px solid transparent;
+    border-left: 520px solid #fff;
+    border-bottom: 520px solid #fff;
+}
